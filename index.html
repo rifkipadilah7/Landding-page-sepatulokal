@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Produk & Layanan</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- 1. NAVBAR / HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-blue-600">StoreRifki</a>
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="#hero" class="hover:text-blue-600 transition">Beranda</a>
+          <a href="#features" class="hover:text-blue-600 transition">Fitur</a>
+          <a href="#contact" class="hover:text-blue-600 transition">Kontak</a>
+        </nav>
+        <a
+          href="#contact"
+          class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition shadow-md"
+        >
+          Pesan Sekarang
+        </a>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION (Main CTA) -->
+    <section
+      id="hero"
+      class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <span
+            class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Solusi Sepatu Lokal Terbaik</span
+          >
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 leading-tight"
+          >
+            Kalau Mau Cari Sepatu Lokal Berkualitas Solusinya Ada Di Toko Kami
+          </h1>
+          <p class="mt-4 text-lg text-gray-600">
+            Solusi sepatu lokal terbaik ada di toko kami.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <!-- Button Call-To-Action (CTA) Utama -->
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white text-center px-8 py-3.5 rounded-lg font-semibold shadow-lg transition transform hover:-translate-y-0.5"
+            >
+              Mulai Sekarang <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a
+              href="#features"
+              class="bg-white hover:bg-gray-100 text-gray-800 text-center px-6 py-3.5 rounded-lg font-semibold border border-gray-300 transition"
+            >
+              Pelajari Fitur
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="sepatu.jpg"
+            alt="Hero Illustration"
+            class="rounded-2xl shadow-2xl object-cover w-full max-w-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURES SECTION -->
+    <section id="features" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl font-bold text-gray-900">
+            Mengapa Memilih Kami?
+          </h2>
+          <p class="text-gray-600 mt-2">
+            Keunggulan utama yang kami berikan untuk kenyamanan dan kepuasan
+            Anda.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature Card 1 -->
+          <div
+            class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-6"
+            >
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Proses Cepat</h3>
+            <p class="text-gray-600">
+              Layanan yang responsif dan efisien tanpa membuang waktu Anda.
+            </p>
+          </div>
+          <!-- Feature Card 2 -->
+          <div
+            class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-xl mb-6"
+            >
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Aman & Terpercaya</h3>
+            <p class="text-gray-600">
+              Kalau kamu beli sepatu di toko kami di jamin aman dan terpercaya
+            </p>
+          </div>
+          <!-- Feature Card 3 -->
+          <div
+            class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-6"
+            >
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Dukungan 24/7</h3>
+            <p class="text-gray-600">
+              Tim kami siap membantu Anda kapan saja ketika menghadapi kendala.
+            </p>
+          </div>
+          <!-- feature card 4 -->
+          <div
+            class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-6"
+            >
+              <i class="fa-circle-check"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">100% Original</h3>
+            <p class="text-gray-600">
+              Di toko kami dijamin kualitas sepatunya 100% original
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION RATING & ULASAN PELANGGAN (TESTIMONIAL) -->
+    <section id="reviews" class="py-20 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Header Rating Ringkasan -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl font-bold text-gray-900">
+            Apa Kata Pembeli Kami?
+          </h2>
+          <p class="text-gray-600 mt-2">
+            Ulasan jujur dari pelanggan yang sudah mencoba kenyamanan sepatu
+            kami.
+          </p>
+
+          <!-- Ringkasan Angka Rating -->
+          <div
+            class="mt-6 inline-flex items-center space-x-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200"
+          >
+            <span class="text-3xl font-extrabold text-gray-900">4.9</span>
+            <div>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-xs text-gray-500 font-medium">
+                Berdasarkan 1.250+ ulasan
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid Kartu Ulasan -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Review Card 1 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-200"
+          >
+            <div
+              class="flex items-center space-x-1 text-yellow-400 text-sm mb-4"
+            >
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-700 italic mb-6">
+              "Bahannya empuk banget, dipakai seharian buat kuliah nggak bikin
+              kaki pegal. Kualitas lem dan jahitan sangat rapi untuk harga
+              segini!"
+            </p>
+            <div class="flex items-center space-x-3">
+              <img
+                src="https://i.pravatar.cc/100?img=12"
+                alt="Foto Profil Rizky"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h4 class="font-bold text-sm text-gray-900">Rizky Ramadhan</h4>
+                <span class="text-xs text-green-600 font-medium"
+                  ><i class="fas fa-circle-check mr-1"></i>Pembeli
+                  Terverifikasi</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 2 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-200"
+          >
+            <div
+              class="flex items-center space-x-1 text-yellow-400 text-sm mb-4"
+            >
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-700 italic mb-6">
+              "Kemarin sempat salah pilih ukuran, tapi proses penukaran sizenya
+              cepat banget dan minnya ramah. Sepatunya cakep, bangga brand
+              lokal!"
+            </p>
+            <div class="flex items-center space-x-3">
+              <img
+                src="https://i.pravatar.cc/100?img=5"
+                alt="Foto Profil Sarah"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h4 class="font-bold text-sm text-gray-900">Sarah Amalia</h4>
+                <span class="text-xs text-green-600 font-medium"
+                  ><i class="fas fa-circle-check mr-1"></i>Pembeli
+                  Terverifikasi</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 3 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-200"
+          >
+            <div
+              class="flex items-center space-x-1 text-yellow-400 text-sm mb-4"
+            >
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-700 italic mb-6">
+              "Pengiriman super cepat, cuma 2 hari sampe Bandung. Sol karetnya
+              grip banget nggak licin. Fix bakal order warna lain!"
+            </p>
+            <div class="flex items-center space-x-3">
+              <img
+                src="https://i.pravatar.cc/100?img=33"
+                alt="Foto Profil Fajar"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h4 class="font-bold text-sm text-gray-900">Fajar Nugraha</h4>
+                <span class="text-xs text-green-600 font-medium"
+                  ><i class="fas fa-circle-check mr-1"></i>Pembeli
+                  Terverifikasi</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4. FORMULIR KONTAK / PEMBELIAN (Penting untuk tugas) -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900">
+              Formulir Pemesanan / Kontak
+            </h2>
+            <p class="text-gray-600 mt-2">
+              Isi formulir di bawah ini untuk menghubungi kami atau melakukan
+              pemesanan.
+            </p>
+          </div>
+
+          <!-- Atribut data-netlify="true" agar form otomatis berfungsi jika di-deploy ke Netlify -->
+          <form
+            name="contact-landing"
+            method="POST"
+            data-netlify="true"
+            class="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="contact-landing" />
+
+            <div>
+              <label
+                for="name"
+                class="block text-sm font-semibold text-gray-700 mb-2"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Masukkan nama Anda"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-semibold text-gray-700 mb-2"
+                >Alamat Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="nama@email.com"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label
+                for="service"
+                class="block text-sm font-semibold text-gray-700 mb-2"
+                >Pilih Layanan / Paket</label
+              >
+              <select
+                id="service"
+                name="service"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              >
+                <option value="Paket Basic">Compass</option>
+                <option value="Paket Pro">Ventella</option>
+                <option value="Paket Enterprise">Aerostreet</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-semibold text-gray-700 mb-2"
+                >Pesan / Catatan Pemesanan</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Tuliskan detail kebutuhan Anda..."
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              ></textarea>
+            </div>
+
+            <!-- CTA Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg shadow-md transition"
+            >
+              Kirim Pesan / Kirim Pemesanan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <p>
+          &copy; 2026 BrandLogo. Seluruh hak cipta dilindungi undang-undang.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
