@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Produk & Layanan</title>
+    <meta
+      name="description"
+      content="StoreRifki, toko sepatu lokal berkualitas dan 100% original. Pilih Compass, Ventella, atau Aerostreet dan pesan sekarang."
+    />
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome untuk Ikon -->
+    <!-- Font Awesome untuk Ikon (dimuat tanpa memblokir render) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+    <!-- Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "StoreRifki",
+        "url": "https://rifkipadilah7.github.io/Landding-page-sepatulokal/",
+        "logo": "https://rifkipadilah7.github.io/Landding-page-sepatulokal/sepatu.webp",
+        "description": "Toko sepatu lokal berkualitas dan 100% original: Compass, Ventella, dan Aerostreet."
+      }
+    </script>
   </head>
   <body class="bg-gray-50 text-gray-800 antialiased">
     <!-- 1. NAVBAR / HEADER -->
@@ -72,8 +95,11 @@
         </div>
         <div class="flex justify-center">
           <img
-            src="sepatu.jpg"
-            alt="Hero Illustration"
+            src="sepatu.webp"
+            alt="Rak sepatu lokal di StoreRifki"
+            width="800"
+            height="500"
+            fetchpriority="high"
             class="rounded-2xl shadow-2xl object-cover w-full max-w-lg"
           />
         </div>
@@ -142,7 +168,7 @@
             <div
               class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-6"
             >
-              <i class="fa-circle-check"></i>
+              <i class="fas fa-circle-check"></i>
             </div>
             <h3 class="text-xl font-bold mb-2">100% Original</h3>
             <p class="text-gray-600">
@@ -209,6 +235,9 @@
               <img
                 src="https://i.pravatar.cc/100?img=12"
                 alt="Foto Profil Rizky"
+                width="40"
+                height="40"
+                loading="lazy"
                 class="w-10 h-10 rounded-full"
               />
               <div>
@@ -243,6 +272,9 @@
               <img
                 src="https://i.pravatar.cc/100?img=5"
                 alt="Foto Profil Sarah"
+                width="40"
+                height="40"
+                loading="lazy"
                 class="w-10 h-10 rounded-full"
               />
               <div>
@@ -276,6 +308,9 @@
               <img
                 src="https://i.pravatar.cc/100?img=33"
                 alt="Foto Profil Fajar"
+                width="40"
+                height="40"
+                loading="lazy"
                 class="w-10 h-10 rounded-full"
               />
               <div>
